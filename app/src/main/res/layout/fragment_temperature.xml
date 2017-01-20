@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="ee.app.arduinobluetooth2.FumeFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cardiomood.android.controls.gauge.SpeedometerGauge
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/speedometer" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_signin_btn_default_background"
+        android:textAlignment="center"
+        android:text="Temperatura"
+        android:layout_below="@id/speedometer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvValor"
+        android:text="24.7"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_signin_btn_default_background"
+        android:textAlignment="center"
+        android:text="Humedad"
+        android:layout_below="@id/tvValor"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvValorHumedad"
+        android:text="24.7"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvHumedad" />
+
+    <ImageView
+        android:id="@+id/ivFan"
+        android:src="@drawable/ic_object_fan"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+</RelativeLayout>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    android:src="@drawable/ic_action_wind" />
+
+</android.support.design.widget.CoordinatorLayout>

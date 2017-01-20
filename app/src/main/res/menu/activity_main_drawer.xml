@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Iniciar" />
+        <item
+            android:id="@+id/nav_temperature"
+            android:icon="@drawable/ic_menu_temperature"
+            android:title="Temperatura" />
+        <item
+            android:id="@+id/nav_fume"
+            android:icon="@drawable/ic_menu_fume"
+            android:title="Riego" />
+        <item
+            android:id="@+id/nav_light"
+            android:icon="@drawable/ic_menu_light"
+            android:title="Iluminación" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="Reportes" />
+    </group>
+    <item android:title="Acerca de">
+        <menu>
+            <item
+                android:id="@+id/nav_develp"
+                android:icon="@drawable/ic_menu_develop"
+                android:title="Desarrollado por" />
+            <item
+                android:id="@+id/nav_comment"
+                android:icon="@drawable/ic_menu_comment"
+                android:title="Comentarios" />
+        </menu>
+    </item>
+
+</menu>
